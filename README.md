@@ -13,10 +13,12 @@
 # goals
 
 - goal is to get `retrain.py` and `label_image.py` functionality working across gRPC via `tensorflow_model_server` serving
-- either update `retrain.py` to have the propper signature, or get `train.py` working (which seems like the "new" way to do things). 
+- either update `retrain.py` to have the propper signature, or get `train.py` (or some variant) working (which seems like the "new" way to do things). 
 - should be able to consume model with https://github.com/tensorflow/serving/blob/master/tensorflow_serving/example/inception_client.py
 - release code to OSS to make it easier for others to blackbox tensorflow.
+- must be trainable (~700 classes per model) on digitalocean CPU hardware (i use 8GB 4vCPU high capacity droplet); ability to move to cloud would be a nice feature (but from using `retrain.py` has not seemed neccesary)
 
 # future
 
 - JSON REST API to aggregate requests to models from single client REST call, capture card images that failed, and queue requests; return card record from cards database if match found. 
+- identify how to best serve ~25 models 
