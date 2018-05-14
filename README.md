@@ -8,7 +8,7 @@
 - `retrain.py` looks like an old-school way to do it, but it also has some nice features like resizing for input, bottleneck saves, auto-splitting the train/validations.
 - i use the module `https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/1` for training
 - total classes is around 18K, to be split across 25 or so models
-- `train.py` is pulled from the snipptes of https://damienpontifex.com/2018/05/06/using-tensorflow-serving-to-host-our-retrained-image-classifier/ (who, is the author of the code that put in the incorrect signature into `retrain.py`)
+- `train.py` is pulled from the snippets of https://damienpontifex.com/2018/05/06/using-tensorflow-serving-to-host-our-retrained-image-classifier/ (who, is the author of the code that put in the incorrect signature into `retrain.py`)
 
 # goals
 
